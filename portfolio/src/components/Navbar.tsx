@@ -50,15 +50,16 @@ function Navbar() {
             </li>
 
             <li
-            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            onClick={() => document.getElementById("contact")?.scrollIntoView()}
             className={`cursor-pointer transition ${
-                activeSection === "home"
+                activeSection === "contact"
                 ? "text-rose-500 font-semibold"
                 : "hover:text-rose-500"
             }`}
             >
             Contact
             </li>
+
           </ul>
 
           <button
