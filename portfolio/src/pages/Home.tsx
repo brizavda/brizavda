@@ -1,34 +1,63 @@
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+
 
 function Home() {
   return (
-    <>
-      <Navbar />
+    <div className="min-h-screen flex flex-col bg-white dark:bg-[#0f0f14] transition-colors duration-300">
 
-      <main className="flex-1 flex items-center">
-        <section className="w-full max-w-6xl mx-auto px-6 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Hi, I'm <span className="text-indigo-600">Brizavda</span> 👋
-            </h1>
+        <Navbar />
 
-            <p className="text-gray-600 max-w-xl mx-auto mb-8">
-            Developer focused on building clean, responsive and user-friendly
-            web interfaces using modern technologies.
-            </p>
+        <main className="flex-1 flex items-center">
+            <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full max-w-6xl mx-auto px-6 text-center"
+            >
+                <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 dark:text-white"
+                >
+                    Hi, I'm <span className="text-rose-500">Briza</span>{" "}
+                    <motion.span
+                    animate={{ rotate: [0, 15, -10, 0] }}
+                    transition={{ repeat: Infinity, repeatDelay: 3 }}
+                    className="inline-block"
+                    >
+                    👋
+                    </motion.span>
+                </motion.h1>
 
-            <div className="flex justify-center gap-4">
-            <button className="px-6 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">
-                View Projects
-            </button>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                    className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto mb-10"
+                >
+                    Frontend Developer who loves building clean, beautiful and user-friendly
+                    web interfaces with modern technologies.
+                </motion.p>
 
-            <button className="px-6 py-3 border border-gray-300 rounded-md hover:border-indigo-600 hover:text-indigo-600 transition">
-                Contact Me
-            </button>
-            </div>
-        </section>
-      </main>
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.6 }}
+                    className="flex justify-center gap-4"
+                >
+                    <button className="px-7 py-3 bg-rose-500 text-white rounded-lg font-medium shadow-md hover:bg-rose-600 transition">
+                    View Projects
+                    </button>
 
-    </>
+                    <button className="px-7 py-3 border border-rose-300 text-rose-500 rounded-lg font-medium hover:bg-rose-50 dark:hover:bg-gray-800 transition">
+                    Contact Me
+                    </button>
+                </motion.div>
+            </motion.section>
+        </main>
+    </div>
   );
 }
 
