@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
+import ProjectsSection from "../components/ProjectsSection";
+
 
 
 function Home() {
@@ -8,7 +10,7 @@ function Home() {
 
         <Navbar />
 
-        <main className="flex-1 flex items-center">
+        <main id="home" className="min-h-screen flex items-center pt-20">
             <motion.section
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -19,7 +21,7 @@ function Home() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 dark:text-white"
+                    className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 dark:text-gray-100"
                 >
                     Hi, I'm <span className="text-rose-500">Briza</span>{" "}
                     <motion.span
@@ -35,7 +37,7 @@ function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 }}
-                    className="text-gray-600 dark:text-gray-300 max-w-xl mx-auto mb-10"
+                    className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-10"
                 >
                     Frontend Developer who loves building clean, beautiful and user-friendly
                     web interfaces with modern technologies.
@@ -47,16 +49,16 @@ function Home() {
                     transition={{ delay: 0.6 }}
                     className="flex justify-center gap-4"
                 >
-                    <button className="px-7 py-3 bg-rose-500 text-white rounded-lg font-medium shadow-md hover:bg-rose-600 transition">
+                    <button className="px-7 py-3 bg-rose-500 text-white rounded-lg font-medium hover:bg-rose-600 transition hover:shadow-[0_0_25px_rgba(244,63,94,0.4)]">
                     View Projects
                     </button>
-
-                    <button className="px-7 py-3 border border-rose-300 text-rose-500 rounded-lg font-medium hover:bg-rose-50 dark:hover:bg-gray-800 transition">
+                    <button className="px-7 py-3 border border-rose-400 text-rose-400 rounded-lg font-medium hover:bg-rose-500/10 dark:hover:bg-gray-800 transition">
                     Contact Me
                     </button>
                 </motion.div>
             </motion.section>
         </main>
+        <ProjectsSection />
     </div>
   );
 }
