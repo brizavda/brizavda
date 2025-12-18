@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
 import AboutSection from "../components/AboutSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
-
-
-
 
 function Home() {
   return (
@@ -62,6 +61,8 @@ function Home() {
         </main>
         <ProjectsSection />
         <AboutSection />
+        <ContactSection />
+        <Footer />
     </div>
   );
 }

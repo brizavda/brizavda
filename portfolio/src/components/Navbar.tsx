@@ -28,9 +28,9 @@ function Navbar() {
             </li>
 
             <li
-            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            onClick={() => document.getElementById("projects")?.scrollIntoView()}
             className={`cursor-pointer transition ${
-                activeSection === "home"
+                activeSection === "projects"
                 ? "text-rose-500 font-semibold"
                 : "hover:text-rose-500"
             }`}
@@ -39,9 +39,9 @@ function Navbar() {
             </li>
 
             <li
-            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            onClick={() => document.getElementById("about")?.scrollIntoView()}
             className={`cursor-pointer transition ${
-                activeSection === "home"
+                activeSection === "about"
                 ? "text-rose-500 font-semibold"
                 : "hover:text-rose-500"
             }`}
