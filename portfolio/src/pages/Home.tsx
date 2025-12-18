@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import AboutSection from "../components/AboutSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
+
 
 
 
@@ -59,6 +61,7 @@ function Home() {
             </motion.section>
         </main>
         <ProjectsSection />
+        <AboutSection />
     </div>
   );
 }
