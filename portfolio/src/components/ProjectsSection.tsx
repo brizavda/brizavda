@@ -18,6 +18,8 @@ function ProjectsSection() {
         Projects
       </motion.h2>
 
+      <div className="w-16 h-1 bg-rose-500 mx-auto mb-12 rounded-full" />
+
       <motion.div
         initial="hidden"
         whileInView="visible"

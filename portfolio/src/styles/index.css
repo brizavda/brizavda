@@ -1,6 +1,10 @@
 html {
   scroll-behavior: smooth;
 }
+* {
+  transition-property: background-color, color, border-color;
+  transition-duration: 200ms;
+}
 
 @tailwind base;
 @tailwind components;

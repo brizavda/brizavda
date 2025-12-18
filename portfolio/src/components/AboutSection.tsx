@@ -15,6 +15,8 @@ function AboutSection() {
       >
         About Me
       </motion.h2>
+      
+      <div className="w-16 h-1 bg-rose-500 mx-auto mb-12 rounded-full" />
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}

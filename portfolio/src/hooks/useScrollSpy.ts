@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const SECTION_IDS = ["home", "projects", "about"];
+const SECTION_IDS = ["home", "projects", "about", "contact"];
 
 export function useScrollSpy() {
   const [activeSection, setActiveSection] = useState("home");

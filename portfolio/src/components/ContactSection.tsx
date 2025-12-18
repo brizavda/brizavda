@@ -16,6 +16,8 @@ function ContactSection() {
         Contact
       </motion.h2>
 
+      <div className="w-16 h-1 bg-rose-500 mx-auto mb-12 rounded-full" />
+
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

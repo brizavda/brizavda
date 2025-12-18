@@ -21,7 +21,7 @@ function Navbar() {
             className={`cursor-pointer transition ${
                 activeSection === "home"
                 ? "text-rose-500 font-semibold"
-                : "hover:text-rose-500"
+                : "hover:text-rose-500 hover:-translate-y-0.5 transition-transform"
             }`}
             >
             Home
@@ -32,7 +32,7 @@ function Navbar() {
             className={`cursor-pointer transition ${
                 activeSection === "projects"
                 ? "text-rose-500 font-semibold"
-                : "hover:text-rose-500"
+                : "hover:text-rose-500 hover:-translate-y-0.5 transition-transform"
             }`}
             >
             Projects
@@ -43,7 +43,7 @@ function Navbar() {
             className={`cursor-pointer transition ${
                 activeSection === "about"
                 ? "text-rose-500 font-semibold"
-                : "hover:text-rose-500"
+                : "hover:text-rose-500 hover:-translate-y-0.5 transition-transform"
             }`}
             >
             About
@@ -54,7 +54,7 @@ function Navbar() {
             className={`cursor-pointer transition ${
                 activeSection === "contact"
                 ? "text-rose-500 font-semibold"
-                : "hover:text-rose-500"
+                : "hover:text-rose-500 hover:-translate-y-0.5 transition-transform"
             }`}
             >
             Contact
