@@ -1,7 +1,11 @@
 import { useTheme } from "../context/ThemeContext";
+import { useScrollSpy } from "../hooks/useScrollSpy";
+
 
 function Navbar() {
   const { dark, toggleTheme } = useTheme();
+  const activeSection = useScrollSpy();
+
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-[#0f0f14]/80 backdrop-blur transition-colors">
@@ -14,28 +18,44 @@ function Navbar() {
           <ul className="hidden md:flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
             <li
             onClick={() => document.getElementById("home")?.scrollIntoView()}
-            className="hover:text-rose-500 cursor-pointer"
+            className={`cursor-pointer transition ${
+                activeSection === "home"
+                ? "text-rose-500 font-semibold"
+                : "hover:text-rose-500"
+            }`}
             >
             Home
             </li>
 
             <li
-            onClick={() => document.getElementById("projects")?.scrollIntoView()}
-            className="hover:text-rose-500 cursor-pointer"
+            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            className={`cursor-pointer transition ${
+                activeSection === "home"
+                ? "text-rose-500 font-semibold"
+                : "hover:text-rose-500"
+            }`}
             >
             Projects
             </li>
 
             <li
-            onClick={() => document.getElementById("about")?.scrollIntoView()}
-            className="hover:text-rose-500 cursor-pointer"
+            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            className={`cursor-pointer transition ${
+                activeSection === "home"
+                ? "text-rose-500 font-semibold"
+                : "hover:text-rose-500"
+            }`}
             >
             About
             </li>
 
             <li
-            onClick={() => document.getElementById("contact")?.scrollIntoView()}
-            className="hover:text-rose-500 cursor-pointer"
+            onClick={() => document.getElementById("home")?.scrollIntoView()}
+            className={`cursor-pointer transition ${
+                activeSection === "home"
+                ? "text-rose-500 font-semibold"
+                : "hover:text-rose-500"
+            }`}
             >
             Contact
             </li>
