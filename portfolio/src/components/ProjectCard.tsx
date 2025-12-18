@@ -8,9 +8,19 @@ type Props = {
 function ProjectCard({ project }: Props) {
   return (
     <motion.div
-      whileHover={{ y: -6 }}
-      transition={{ type: "spring", stiffness: 300 }}
-      className="bg-white dark:bg-[#15151d] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-lg transition"
+    variants={{
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.6,
+            ease: "easeOut",
+        },
+        },
+    }}
+    whileHover={{ y: -6 }}
+    className="bg-white dark:bg-[#15151d] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-sm hover:shadow-lg transition"
     >
       <h3 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">
         {project.title}

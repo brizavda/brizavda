@@ -18,11 +18,24 @@ function ProjectsSection() {
         Projects
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={{
+            hidden: {},
+            visible: {
+            transition: {
+                staggerChildren: 0.45,
+            },
+            },
+        }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
         {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+            <ProjectCard key={project.title} project={project} />
         ))}
-      </div>
+        </motion.div>
     </section>
   );
 }

@@ -16,7 +16,7 @@ export const projects: Project[] = [
     demo: "#",
   },
   {
-    title: "Todo App",
+    title: "To-do App",
     description:
       "A simple and clean todo application with local state management.",
     tech: ["React", "TypeScript"],

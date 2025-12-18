@@ -23,7 +23,7 @@ function Home() {
                     transition={{ delay: 0.2 }}
                     className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900 dark:text-gray-100"
                 >
-                    Hi, I'm <span className="text-rose-500">Briza</span>{" "}
+                    Hi, I'm <span className="text-rose-500">Brizavda</span>{" "}
                     <motion.span
                     animate={{ rotate: [0, 15, -10, 0] }}
                     transition={{ repeat: Infinity, repeatDelay: 3 }}
@@ -39,7 +39,7 @@ function Home() {
                     transition={{ delay: 0.4 }}
                     className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-10"
                 >
-                    Frontend Developer who loves building clean, beautiful and user-friendly
+                    Developer who loves building clean, beautiful and user-friendly
                     web interfaces with modern technologies.
                 </motion.p>
 
