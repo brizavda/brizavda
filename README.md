@@ -12,37 +12,41 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# Hola, soy Italia 👋
+# Hola, soy Italia Barrón 👋
 
-Soy estudiante de Ingeniería en Computación (senior year) con enfoque en **desarrollo de software y sistemas**.  
-Me interesa construir soluciones que combinen buen diseño, buena arquitectura y código limpio.
+Soy estudiante de último año de **Ingeniería en Computación**, con interés en el desarrollo de **software y sistemas completos**, combinando frontend, backend y buenas prácticas de ingeniería.
+
+Me motiva construir soluciones bien diseñadas, con código limpio, buena arquitectura y una experiencia de usuario cuidada.
 
 ---
 
 ## 🚀 Sobre mí
 
 - 🎓 Estudiante de último año de Ingeniería en Computación.
-- 💻 Intereses principales: desarrollo de software, sistemas distribuidos, IA, backend y arquitectura.
-- 📚 Siempre aprendiendo cosas nuevas.
-- 🤝 Me gusta trabajar en equipo, documentar bien y dejar los proyectos listos para que otros puedan continuarlos / utilizarlos.
+- 💻 Intereses principales: desarrollo web, backend, sistemas distribuidos, inteligencia artificial y arquitectura de software.
+- 🧠 Experiencia trabajando tanto en frontend como backend.
+- 📚 En constante aprendizaje y mejora continua.
+- 🤝 Disfruto el trabajo en equipo, la documentación clara y los proyectos bien estructurados.
 
 ---
 
 ## 🛠️ Tecnologías
 
 ### Lenguajes de programación
-- Python · Java · C/C++ · Kotlin · JavaScript
+- Python · Java · C/C++ · Kotlin · JavaScript · TypeScript
 
 ### Desarrollo web
 - HTML · CSS · JavaScript  
-- Frameworks: React / Node.js / Angular 
+- React · Node.js · Tailwind CSS  
+- Consumo de APIs REST
 
-### Herramientas y otros
+### Backend y otros
+- SQL (bases de datos relacionales)
 - Git & GitHub
 - Linux
-- SQL (bases de datos relacionales)
-- Metodologías básicas de desarrollo (control de versiones, pruebas, documentación)
-
+- Fundamentos de arquitectura de software
+- Control de versiones, pruebas y documentación
+  
 ---
 
 ## 📂 Proyectos
